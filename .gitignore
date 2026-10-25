@@ -1,0 +1,43 @@
+# Python environments and generated files
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# Tool caches and test reports
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+
+# Local configuration; keep the documented example
+.env
+.env.*
+!.env.example
+
+# Local application data and SQLite sidecar files
+/data/
+*.sqlite
+*.sqlite3
+*.sqlite-wal
+*.sqlite-shm
+*.sqlite3-wal
+*.sqlite3-shm
+
+# Viewer dependencies and generated output
+node_modules/
+*.tsbuildinfo
+
+# Local editor, OS, and review state
+.DS_Store
+.idea/
+.vscode/
+.code-review-graph/
+BUILD_PROMPT.md
+*.log
