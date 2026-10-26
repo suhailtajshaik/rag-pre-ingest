@@ -1,0 +1,46 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [4 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >>  >> /Contents 5 0 R >>
+endobj
+5 0 obj
+<< /Length 399 >>
+stream
+40 480 m 40 660 l S
+520 480 m 520 660 l S
+200 540 m 200 660 l S
+360 480 m 360 660 l S
+40 480 m 520 480 l S
+40 540 m 520 540 l S
+40 600 m 520 600 l S
+40 660 m 520 660 l S
+BT /F1 14 Tf 50 625 Td (Name) Tj ET
+BT /F1 14 Tf 210 625 Td (Qty) Tj ET
+BT /F1 14 Tf 370 625 Td (Total) Tj ET
+BT /F1 14 Tf 50 565 Td (Widget) Tj ET
+BT /F1 14 Tf 370 565 Td (9.50) Tj ET
+BT /F1 14 Tf 50 505 Td (Merged label) Tj ET
+
+endstream
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000185 00000 n 
+0000000312 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+762
+%%EOF

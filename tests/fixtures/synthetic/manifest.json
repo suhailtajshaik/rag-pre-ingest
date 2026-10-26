@@ -1,0 +1,308 @@
+{
+  "description": "Synthetic scenarios only; real-world calibration remains required.",
+  "fixtures": [
+    {
+      "file": "01-clean.pdf",
+      "scenarios": [
+        "direct_read",
+        "heading"
+      ],
+      "validation": "accepted",
+      "config": {},
+      "expected_text": "Ordinary readable paragraph."
+    },
+    {
+      "file": "02-repeated.pdf",
+      "scenarios": [
+        "repeated_header",
+        "repeated_footer",
+        "page_numbers",
+        "multipage"
+      ],
+      "validation": "accepted",
+      "config": {},
+      "expected_text": ""
+    },
+    {
+      "file": "03-two-columns.pdf",
+      "scenarios": [
+        "two_columns",
+        "full_width_heading"
+      ],
+      "validation": "accepted",
+      "config": {},
+      "expected_text": ""
+    },
+    {
+      "file": "04-ruled-table.pdf",
+      "scenarios": [
+        "ruled_table",
+        "blank_cells",
+        "numeric_table"
+      ],
+      "validation": "accepted",
+      "config": {},
+      "expected_text": ""
+    },
+    {
+      "file": "05-merged-grid.pdf",
+      "scenarios": [
+        "ruled_table",
+        "merged_cells"
+      ],
+      "validation": "accepted",
+      "config": {},
+      "expected_text": ""
+    },
+    {
+      "file": "06-unruled-table.pdf",
+      "scenarios": [
+        "unruled_table",
+        "aligned_columns"
+      ],
+      "validation": "accepted",
+      "config": {},
+      "expected_text": ""
+    },
+    {
+      "file": "07-scan.pdf",
+      "scenarios": [
+        "scanned_pdf",
+        "ocr_required"
+      ],
+      "validation": "accepted",
+      "config": {},
+      "expected_text": "Invoice total 123.45"
+    },
+    {
+      "file": "08-mixed.pdf",
+      "scenarios": [
+        "mixed_text_image",
+        "region_ocr"
+      ],
+      "validation": "accepted",
+      "config": {},
+      "expected_text": ""
+    },
+    {
+      "file": "09-caption.pdf",
+      "scenarios": [
+        "caption",
+        "image"
+      ],
+      "validation": "accepted",
+      "config": {},
+      "expected_text": ""
+    },
+    {
+      "file": "10-logo.pdf",
+      "scenarios": [
+        "repeated_logo",
+        "decorative_image"
+      ],
+      "validation": "accepted",
+      "config": {},
+      "expected_text": ""
+    },
+    {
+      "file": "11-hyphen-wrap.pdf",
+      "scenarios": [
+        "line_wrap",
+        "hyphen_repair",
+        "real_hyphen"
+      ],
+      "validation": "accepted",
+      "config": {},
+      "expected_text": ""
+    },
+    {
+      "file": "12-blank.pdf",
+      "scenarios": [
+        "empty_document"
+      ],
+      "validation": "accepted",
+      "config": {},
+      "expected_text": ""
+    },
+    {
+      "file": "13-wrong-extension.docx",
+      "scenarios": [
+        "extension_mismatch",
+        "sniffed_pdf"
+      ],
+      "validation": "accepted",
+      "config": {},
+      "expected_text": ""
+    },
+    {
+      "file": "14-corrupted.pdf",
+      "scenarios": [
+        "corrupted_input"
+      ],
+      "validation": "corrupted_file",
+      "config": {},
+      "expected_text": ""
+    },
+    {
+      "file": "15-empty.pdf",
+      "scenarios": [
+        "empty_input"
+      ],
+      "validation": "empty_file",
+      "config": {},
+      "expected_text": ""
+    },
+    {
+      "file": "16-small-limit.pdf",
+      "scenarios": [
+        "oversized_input"
+      ],
+      "validation": "file_too_large",
+      "config": {
+        "max_bytes": 20
+      },
+      "expected_text": ""
+    },
+    {
+      "file": "17-page-limit.pdf",
+      "scenarios": [
+        "page_limit"
+      ],
+      "validation": "too_many_pages",
+      "config": {
+        "max_pages": 2
+      },
+      "expected_text": ""
+    },
+    {
+      "file": "18-structured.docx",
+      "scenarios": [
+        "unicode",
+        "ligatures",
+        "headings",
+        "lists",
+        "table",
+        "blank_cells",
+        "merged_cells",
+        "embedded_image",
+        "caption",
+        "special_characters",
+        "non_latin"
+      ],
+      "validation": "accepted",
+      "config": {},
+      "expected_text": "Ligatures fi fl; nonbreaking space; caf\u00e9 r\u00e9sum\u00e9."
+    },
+    {
+      "file": "19-structured.xlsx",
+      "scenarios": [
+        "numeric_cells",
+        "blank_cells",
+        "merged_cells",
+        "formula",
+        "multiple_sheets",
+        "empty_sheet"
+      ],
+      "validation": "accepted",
+      "config": {},
+      "expected_text": ""
+    },
+    {
+      "file": "20-scan.png",
+      "scenarios": [
+        "standalone_image",
+        "ocr_required"
+      ],
+      "validation": "accepted",
+      "config": {},
+      "expected_text": "Invoice total 123.45"
+    },
+    {
+      "file": "21-scan.jpg",
+      "scenarios": [
+        "jpeg",
+        "ocr_required"
+      ],
+      "validation": "accepted",
+      "config": {},
+      "expected_text": ""
+    },
+    {
+      "file": "22-multipage.tiff",
+      "scenarios": [
+        "multipage_image",
+        "rotated_scan"
+      ],
+      "validation": "accepted",
+      "config": {},
+      "expected_text": ""
+    },
+    {
+      "file": "23-image-limit.png",
+      "scenarios": [
+        "pixel_limit"
+      ],
+      "validation": "image_too_large",
+      "config": {
+        "max_image_pixels": 100
+      },
+      "expected_text": ""
+    },
+    {
+      "file": "24-compression-limit.docx",
+      "scenarios": [
+        "zip_expansion_limit"
+      ],
+      "validation": "archive_limit_exceeded",
+      "config": {},
+      "expected_text": ""
+    },
+    {
+      "file": "25-encrypted-office.docx",
+      "scenarios": [
+        "encrypted_office_container"
+      ],
+      "validation": "encrypted_or_legacy_office",
+      "config": {},
+      "expected_text": ""
+    },
+    {
+      "file": "26-truncated.pdf",
+      "scenarios": [
+        "truncated_input"
+      ],
+      "validation": "corrupted_file",
+      "config": {},
+      "expected_text": ""
+    },
+    {
+      "file": "27-unsupported.txt",
+      "scenarios": [
+        "unsupported_type"
+      ],
+      "validation": "unsupported_file_type",
+      "config": {},
+      "expected_text": ""
+    },
+    {
+      "file": "28-corrupt-image.png",
+      "scenarios": [
+        "corrupt_image"
+      ],
+      "validation": "corrupted_file",
+      "config": {},
+      "expected_text": ""
+    },
+    {
+      "file": "29-image-page-limit.tiff",
+      "scenarios": [
+        "image_page_limit"
+      ],
+      "validation": "too_many_pages",
+      "config": {
+        "max_pages": 1
+      },
+      "expected_text": ""
+    }
+  ]
+}
