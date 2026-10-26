@@ -1,0 +1,497 @@
+[
+  {
+    "file": "w3c-complex-table.pdf",
+    "failures": [],
+    "validation": "accepted",
+    "stats": {
+      "pages": {
+        "total": 1,
+        "read": 1,
+        "ocr": 0,
+        "mixed": 0
+      },
+      "images": {
+        "total": 0,
+        "decorative": 0,
+        "with_ocr_text": 0
+      },
+      "tables": {
+        "total": 1,
+        "with_merged_cells": 1
+      },
+      "headings": 2,
+      "paragraphs": 0,
+      "lists": 0,
+      "warnings": {
+        "total": 0,
+        "by_code": {}
+      },
+      "duration_seconds": 0.03784620785154402
+    },
+    "warning_codes": [],
+    "headings": [
+      "Example table",
+      "This is an example of a data table."
+    ],
+    "table_shapes": [
+      {
+        "rows": 6,
+        "columns": 6,
+        "merged_cells": 5
+      }
+    ]
+  },
+  {
+    "file": "w3c-complex-table.docx",
+    "failures": [],
+    "validation": "accepted",
+    "stats": {
+      "pages": {
+        "total": 1,
+        "read": 1,
+        "ocr": 0,
+        "mixed": 0
+      },
+      "images": {
+        "total": 0,
+        "decorative": 0,
+        "with_ocr_text": 0
+      },
+      "tables": {
+        "total": 1,
+        "with_merged_cells": 1
+      },
+      "headings": 1,
+      "paragraphs": 1,
+      "lists": 0,
+      "warnings": {
+        "total": 1,
+        "by_code": {
+          "synthetic_page": 1
+        }
+      },
+      "duration_seconds": 0.016133375000208616
+    },
+    "warning_codes": [
+      "synthetic_page"
+    ],
+    "headings": [
+      "Example table"
+    ],
+    "table_shapes": [
+      {
+        "rows": 6,
+        "columns": 6,
+        "merged_cells": 5
+      }
+    ]
+  },
+  {
+    "file": "w3c-two-columns.pdf",
+    "failures": [],
+    "validation": "accepted",
+    "stats": {
+      "pages": {
+        "total": 1,
+        "read": 1,
+        "ocr": 0,
+        "mixed": 0
+      },
+      "images": {
+        "total": 0,
+        "decorative": 0,
+        "with_ocr_text": 0
+      },
+      "tables": {
+        "total": 0,
+        "with_merged_cells": 0
+      },
+      "headings": 5,
+      "paragraphs": 25,
+      "lists": 7,
+      "warnings": {
+        "total": 4,
+        "by_code": {
+          "table_inconsistent": 1,
+          "reading_order_uncertain": 3
+        }
+      },
+      "duration_seconds": 0.16105995909310877
+    },
+    "warning_codes": [
+      "reading_order_uncertain",
+      "table_inconsistent"
+    ],
+    "headings": [
+      "Application for this and that",
+      "List",
+      "Header One",
+      "Another list",
+      "Another Header One"
+    ],
+    "table_shapes": []
+  },
+  {
+    "file": "w3c-headings.pdf",
+    "failures": [],
+    "validation": "accepted",
+    "stats": {
+      "pages": {
+        "total": 1,
+        "read": 1,
+        "ocr": 0,
+        "mixed": 0
+      },
+      "images": {
+        "total": 0,
+        "decorative": 0,
+        "with_ocr_text": 0
+      },
+      "tables": {
+        "total": 0,
+        "with_merged_cells": 0
+      },
+      "headings": 3,
+      "paragraphs": 3,
+      "lists": 0,
+      "warnings": {
+        "total": 1,
+        "by_code": {
+          "table_inconsistent": 1
+        }
+      },
+      "duration_seconds": 0.020449708914384246
+    },
+    "warning_codes": [
+      "table_inconsistent"
+    ],
+    "headings": [
+      "Cooking techniques",
+      "Cooking with oil",
+      "Cooking with butter"
+    ],
+    "table_shapes": []
+  },
+  {
+    "file": "w3c-headings.docx",
+    "failures": [],
+    "validation": "accepted",
+    "stats": {
+      "pages": {
+        "total": 1,
+        "read": 1,
+        "ocr": 0,
+        "mixed": 0
+      },
+      "images": {
+        "total": 0,
+        "decorative": 0,
+        "with_ocr_text": 0
+      },
+      "tables": {
+        "total": 0,
+        "with_merged_cells": 0
+      },
+      "headings": 3,
+      "paragraphs": 3,
+      "lists": 0,
+      "warnings": {
+        "total": 1,
+        "by_code": {
+          "synthetic_page": 1
+        }
+      },
+      "duration_seconds": 0.012782540870830417
+    },
+    "warning_codes": [
+      "synthetic_page"
+    ],
+    "headings": [
+      "Cooking techniques",
+      "Cooking with oil",
+      "Cooking with butter"
+    ],
+    "table_shapes": []
+  },
+  {
+    "file": "w3c-lists.pdf",
+    "failures": [],
+    "validation": "accepted",
+    "stats": {
+      "pages": {
+        "total": 1,
+        "read": 1,
+        "ocr": 0,
+        "mixed": 0
+      },
+      "images": {
+        "total": 0,
+        "decorative": 0,
+        "with_ocr_text": 0
+      },
+      "tables": {
+        "total": 0,
+        "with_merged_cells": 0
+      },
+      "headings": 1,
+      "paragraphs": 6,
+      "lists": 6,
+      "warnings": {
+        "total": 1,
+        "by_code": {
+          "table_inconsistent": 1
+        }
+      },
+      "duration_seconds": 0.026687625097110868
+    },
+    "warning_codes": [
+      "table_inconsistent"
+    ],
+    "headings": [
+      "Local Schools"
+    ],
+    "table_shapes": []
+  },
+  {
+    "file": "w3c-language.pdf",
+    "failures": [],
+    "validation": "accepted",
+    "stats": {
+      "pages": {
+        "total": 1,
+        "read": 1,
+        "ocr": 0,
+        "mixed": 0
+      },
+      "images": {
+        "total": 0,
+        "decorative": 0,
+        "with_ocr_text": 0
+      },
+      "tables": {
+        "total": 0,
+        "with_merged_cells": 0
+      },
+      "headings": 0,
+      "paragraphs": 11,
+      "lists": 0,
+      "warnings": {
+        "total": 0,
+        "by_code": {}
+      },
+      "duration_seconds": 0.02859704103320837
+    },
+    "warning_codes": [],
+    "headings": [],
+    "table_shapes": []
+  },
+  {
+    "file": "irs-w9.pdf",
+    "failures": [],
+    "validation": "accepted",
+    "stats": {
+      "pages": {
+        "total": 6,
+        "read": 6,
+        "ocr": 0,
+        "mixed": 0
+      },
+      "images": {
+        "total": 0,
+        "decorative": 0,
+        "with_ocr_text": 0
+      },
+      "tables": {
+        "total": 4,
+        "with_merged_cells": 1
+      },
+      "headings": 103,
+      "paragraphs": 323,
+      "lists": 69,
+      "warnings": {
+        "total": 36,
+        "by_code": {
+          "table_inconsistent": 1,
+          "reading_order_uncertain": 35
+        }
+      },
+      "duration_seconds": 2.66009383299388
+    },
+    "warning_codes": [
+      "reading_order_uncertain",
+      "table_inconsistent"
+    ],
+    "headings": [
+      "W-9",
+      "Request for Taxpayer",
+      "Identification Number and Certification",
+      "Go to",
+      "www.irs.gov/FormW9",
+      "for instructions and the latest information.",
+      "Give form to the",
+      "requester. Do not",
+      "send to the IRS.",
+      "Before you begin.",
+      "1",
+      "2",
+      "3a",
+      "one",
+      "Note:",
+      "Print or type.",
+      "Specific Instructions",
+      "3b",
+      "4",
+      "5",
+      "6",
+      "7",
+      "Part I",
+      "Taxpayer Identification Number (TIN)",
+      "Note:",
+      "Part II",
+      "Certification",
+      "or",
+      "Certification instructions.",
+      "Sign",
+      "Here",
+      "Signature of",
+      "U.S. person",
+      "Date",
+      "General Instructions",
+      "What\u2019s New",
+      "Purpose of Form",
+      "W-9",
+      "Caution:",
+      "By signing the filled-out form, you:",
+      "Note:",
+      "Definition of a U.S. person.",
+      "Establishing U.S. status for purposes of chapter 3 and chapter 4",
+      "withholding.",
+      "Foreign person.",
+      "Nonresident alien who becomes a resident alien.",
+      "Example.",
+      "Backup Withholding",
+      "What is backup withholding?",
+      "Payments you receive will be subject to backup withholding if:",
+      "What Is FATCA Reporting?",
+      "Updating Your Information",
+      "Penalties",
+      "Failure to furnish TIN.",
+      "Civil penalty for false information with respect to withholding.",
+      "Criminal penalty for falsifying information.",
+      "Misuse of TINs.",
+      "Specific Instructions",
+      "Line 1",
+      "do not",
+      "Note for ITIN applicant:",
+      "disregarded entity.",
+      "Line 2",
+      "Line 3a",
+      "Line 3b",
+      "Note:",
+      "Line 4 Exemptions",
+      "Exempt payee code.",
+      "IF the payment is for . . .",
+      "THEN the payment is exempt",
+      "for . . .",
+      "Exemption from FATCA reporting code.",
+      "Note:",
+      "Line 5",
+      "Line 6",
+      "Part I. Taxpayer Identification Number (TIN)",
+      "Enter your TIN in the appropriate box.",
+      "Note:",
+      "How to get a TIN.",
+      "Note:",
+      "Caution:",
+      "Part II. Certification",
+      "Signature requirements.",
+      "1. Interest, dividend, and barter exchange accounts opened",
+      "before 1984 and broker accounts considered active during 1983.",
+      "2. Interest, dividend, broker, and barter exchange accounts",
+      "opened after 1983 and broker accounts considered inactive during",
+      "3. Real estate transactions.",
+      "4. Other payments.",
+      "5. Mortgage interest paid by you, acquisition or abandonment of",
+      "secured property, cancellation of debt, qualified tuition program",
+      "payments (under section 529), ABLE accounts (under section 529A),",
+      "IRA, Coverdell ESA, Archer MSA or HSA contributions or",
+      "distributions, and pension distributions.",
+      "What Name and Number To Give the Requester",
+      "For this type of account:",
+      "Give name and SSN of:",
+      "For this type of account:",
+      "Give name and EIN of:",
+      "Note:",
+      "Secure Your Tax Records From Identity Theft",
+      "Privacy Act Notice",
+      "Protect yourself from suspicious emails or phishing schemes."
+    ],
+    "table_shapes": [
+      {
+        "rows": 2,
+        "columns": 11,
+        "merged_cells": 1
+      },
+      {
+        "rows": 1,
+        "columns": 1,
+        "merged_cells": 0
+      },
+      {
+        "rows": 1,
+        "columns": 10,
+        "merged_cells": 0
+      },
+      {
+        "rows": 6,
+        "columns": 2,
+        "merged_cells": 0
+      }
+    ]
+  },
+  {
+    "file": "census-state-population.xlsx",
+    "failures": [],
+    "validation": "accepted",
+    "stats": {
+      "pages": {
+        "total": 1,
+        "read": 1,
+        "ocr": 0,
+        "mixed": 0
+      },
+      "images": {
+        "total": 0,
+        "decorative": 0,
+        "with_ocr_text": 0
+      },
+      "tables": {
+        "total": 1,
+        "with_merged_cells": 1
+      },
+      "headings": 1,
+      "paragraphs": 0,
+      "lists": 0,
+      "warnings": {
+        "total": 1,
+        "by_code": {
+          "synthetic_page": 1
+        }
+      },
+      "duration_seconds": 0.07340683415532112
+    },
+    "warning_codes": [
+      "synthetic_page"
+    ],
+    "headings": [
+      "NST-EST2024-POP"
+    ],
+    "table_shapes": [
+      {
+        "rows": 68,
+        "columns": 7,
+        "merged_cells": 11
+      }
+    ]
+  }
+]

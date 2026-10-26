@@ -1,0 +1,237 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1830" viewBox="0 0 1600 1830">
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#475569"/></marker></defs>
+<rect width="1600" height="1830" fill="white"/>
+<text x="70" y="62" font-family="Helvetica,Arial,sans-serif" font-size="32" fill="#0f172a">
+<tspan x="70" dy="0">rag-pre-ingest | current architecture</tspan>
+</text>
+<text x="70" y="100" font-family="Helvetica,Arial,sans-serif" font-size="20" fill="#475569">
+<tspan x="70" dy="0">One service, local storage, direct reading first; OCR only where flagged.</tspan>
+</text>
+<text x="70" y="139" font-family="Helvetica,Arial,sans-serif" font-size="17" fill="#64748b">
+<tspan x="70" dy="0">SERVICE AND STORAGE</tspan>
+</text>
+<rect x="70" y="160" width="440" height="110" rx="5" fill="#e7f0ff" stroke="#334155" stroke-width="1.5"/>
+<text x="88" y="195" font-family="Helvetica,Arial,sans-serif" font-size="21" fill="#0f172a">
+<tspan x="88" dy="0">Vite + React viewer</tspan>
+</text>
+<text x="88" y="226" font-family="Helvetica,Arial,sans-serif" font-size="17" fill="#0f172a">
+<tspan x="88" dy="0">Static build served by FastAPI</tspan>
+<tspan x="88" dy="22.1">Upload, inspect, monitor and delete</tspan>
+</text>
+<rect x="1090" y="160" width="440" height="110" rx="5" fill="#e7f0ff" stroke="#334155" stroke-width="1.5"/>
+<text x="1108" y="195" font-family="Helvetica,Arial,sans-serif" font-size="21" fill="#0f172a">
+<tspan x="1108" dy="0">Swagger / API clients</tspan>
+</text>
+<text x="1108" y="226" font-family="Helvetica,Arial,sans-serif" font-size="17" fill="#0f172a">
+<tspan x="1108" dy="0">Automatic OpenAPI documentation</tspan>
+<tspan x="1108" dy="22.1">Same FastAPI HTTP service</tspan>
+</text>
+<rect x="580" y="280" width="440" height="150" rx="5" fill="#e7f0ff" stroke="#334155" stroke-width="1.5"/>
+<text x="598" y="315" font-family="Helvetica,Arial,sans-serif" font-size="21" fill="#0f172a">
+<tspan x="598" dy="0">FastAPI routes + services</tspan>
+</text>
+<text x="598" y="346" font-family="Helvetica,Arial,sans-serif" font-size="17" fill="#0f172a">
+<tspan x="598" dy="0">Thin routes; typed API models</tspan>
+<tspan x="598" dy="22.1">GET status, results, markdown, images</tspan>
+<tspan x="598" dy="22.1">SSE events; DELETE with worker lock</tspan>
+</text>
+<polyline points="510,215 550,215 550,305 580,305" fill="none" stroke="#475569" stroke-width="1.7" marker-end="url(#arrow)"/>
+<polyline points="1090,215 1050,215 1050,305 1020,305" fill="none" stroke="#475569" stroke-width="1.7" marker-end="url(#arrow)"/>
+<rect x="70" y="340" width="440" height="160" rx="5" fill="#fff2cc" stroke="#334155" stroke-width="1.5"/>
+<text x="88" y="375" font-family="Helvetica,Arial,sans-serif" font-size="21" fill="#0f172a">
+<tspan x="88" dy="0">Upload validation door</tspan>
+</text>
+<text x="88" y="406" font-family="Helvetica,Arial,sans-serif" font-size="17" fill="#0f172a">
+<tspan x="88" dy="0">Size, sniffed type, safe filename</tspan>
+<tspan x="88" dy="22.1">PDF / Office ZIP / image integrity</tspan>
+<tspan x="88" dy="22.1">Page, pixel and ZIP expansion caps</tspan>
+<tspan x="88" dy="22.1">Reject first; stable error + audit</tspan>
+</text>
+<polyline points="580,375 510,375" fill="none" stroke="#475569" stroke-width="1.7" marker-end="url(#arrow)"/>
+<text x="516" y="361" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#475569">
+<tspan x="516" dy="0">upload</tspan>
+</text>
+<rect x="580" y="475" width="440" height="120" rx="5" fill="#e7f0ff" stroke="#334155" stroke-width="1.5"/>
+<text x="598" y="510" font-family="Helvetica,Arial,sans-serif" font-size="21" fill="#0f172a">
+<tspan x="598" dy="0">Hash + exact duplicate check</tspan>
+</text>
+<text x="598" y="541" font-family="Helvetica,Arial,sans-serif" font-size="17" fill="#0f172a">
+<tspan x="598" dy="0">SHA-256 after validation succeeds</tspan>
+<tspan x="598" dy="22.1">Unique hash; reuse the existing job</tspan>
+</text>
+<polyline points="290,500 290,535 580,535" fill="none" stroke="#475569" stroke-width="1.7" marker-end="url(#arrow)"/>
+<text x="345" y="524" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#475569">
+<tspan x="345" dy="0">validated bytes</tspan>
+</text>
+<rect x="1090" y="340" width="440" height="160" rx="5" fill="#f3f5f8" stroke="#334155" stroke-width="1.5"/>
+<text x="1108" y="375" font-family="Helvetica,Arial,sans-serif" font-size="21" fill="#0f172a">
+<tspan x="1108" dy="0">SQLite in WAL mode</tspan>
+</text>
+<text x="1108" y="406" font-family="Helvetica,Arial,sans-serif" font-size="17" fill="#0f172a">
+<tspan x="1108" dy="0">Durable jobs and queue state</tspan>
+<tspan x="1108" dy="22.1">Unique hashes, progress and result paths</tspan>
+<tspan x="1108" dy="22.1">Rejected-upload audit</tspan>
+<tspan x="1108" dy="22.1">Restart requeues unfinished jobs</tspan>
+</text>
+<polyline points="1020,535 1050,535 1050,420 1090,420" fill="none" stroke="#475569" stroke-width="1.7" marker-end="url(#arrow)"/>
+<rect x="1090" y="535" width="440" height="110" rx="5" fill="#f3f5f8" stroke="#334155" stroke-width="1.5"/>
+<text x="1108" y="570" font-family="Helvetica,Arial,sans-serif" font-size="21" fill="#0f172a">
+<tspan x="1108" dy="0">Local upload storage</tspan>
+</text>
+<text x="1108" y="601" font-family="Helvetica,Arial,sans-serif" font-size="17" fill="#0f172a">
+<tspan x="1108" dy="0">Generated names; original bytes retained</tspan>
+<tspan x="1108" dy="22.1">Client names never become paths</tspan>
+</text>
+<polyline points="1310,500 1310,535" fill="none" stroke="#475569" stroke-width="1.7" marker-end="url(#arrow)"/>
+<rect x="70" y="665" width="950" height="150" rx="5" fill="#e7f0ff" stroke="#334155" stroke-width="1.5"/>
+<text x="88" y="700" font-family="Helvetica,Arial,sans-serif" font-size="21" fill="#0f172a">
+<tspan x="88" dy="0">Durable background worker</tspan>
+</text>
+<text x="88" y="731" font-family="Helvetica,Arial,sans-serif" font-size="17" fill="#0f172a">
+<tspan x="88" dy="0">Claims queued jobs; runs one isolated processing child at a time</tspan>
+<tspan x="88" dy="22.1">Per-job + per-page limits; temporary workspace; durable checkpoints</tspan>
+<tspan x="88" dy="22.1">Interrupted page work becomes warnings; recovered output remains inspectable</tspan>
+<tspan x="88" dy="22.1">DELETE cancels active work under lock and removes stored artifacts</tspan>
+</text>
+<polyline points="1090,455 1060,455 1060,645 545,645 545,665" fill="none" stroke="#475569" stroke-width="1.7" marker-end="url(#arrow)"/>
+<text x="590" y="632" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#475569">
+<tspan x="590" dy="0">claim queued job</tspan>
+</text>
+<rect x="1090" y="665" width="440" height="150" rx="5" fill="#eee8ff" stroke="#334155" stroke-width="1.5"/>
+<text x="1108" y="700" font-family="Helvetica,Arial,sans-serif" font-size="21" fill="#0f172a">
+<tspan x="1108" dy="0">Local result storage</tspan>
+</text>
+<text x="1108" y="731" font-family="Helvetica,Arial,sans-serif" font-size="17" fill="#0f172a">
+<tspan x="1108" dy="0">Result JSON and clean markdown</tspan>
+<tspan x="1108" dy="22.1">Page PNG previews and image crops</tspan>
+<tspan x="1108" dy="22.1">API reads persisted artifacts</tspan>
+<tspan x="1108" dy="22.1">SSE reads current job progress</tspan>
+</text>
+<text x="70" y="886" font-family="Helvetica,Arial,sans-serif" font-size="20" fill="#64748b">
+<tspan x="70" dy="0">PROCESSING CHILD | per-page flow</tspan>
+</text>
+<rect x="70" y="930" width="440" height="190" rx="5" fill="#e7f0ff" stroke="#334155" stroke-width="1.5"/>
+<text x="88" y="965" font-family="Helvetica,Arial,sans-serif" font-size="21" fill="#0f172a">
+<tspan x="88" dy="0">Direct read always runs</tspan>
+</text>
+<text x="88" y="996" font-family="Helvetica,Arial,sans-serif" font-size="17" fill="#0f172a">
+<tspan x="88" dy="0">PDFium: text, word boxes, vector lines</tspan>
+<tspan x="88" dy="22.1">Word: paragraphs, tables, image assets</tspan>
+<tspan x="88" dy="22.1">Excel: cells, merges, worksheet images</tspan>
+<tspan x="88" dy="22.1">Standalone images have no text layer</tspan>
+<tspan x="88" dy="22.1">Office coordinates are synthetic</tspan>
+</text>
+<polyline points="290,815 290,930" fill="none" stroke="#475569" stroke-width="1.7" marker-end="url(#arrow)"/>
+<text x="307" y="898" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#475569">
+<tspan x="307" dy="0">process document</tspan>
+</text>
+<rect x="580" y="930" width="440" height="190" rx="5" fill="#fff2cc" stroke="#334155" stroke-width="1.5"/>
+<text x="598" y="965" font-family="Helvetica,Arial,sans-serif" font-size="21" fill="#0f172a">
+<tspan x="598" dy="0">Concurrent page quality checks</tspan>
+</text>
+<text x="598" y="996" font-family="Helvetica,Arial,sans-serif" font-size="17" fill="#0f172a">
+<tspan x="598" dy="0">Runs alongside direct reading</tspan>
+<tspan x="598" dy="22.1">Character count, garbage, image coverage</tspan>
+<tspan x="598" dy="22.1">Density and configurable thresholds</tspan>
+<tspan x="598" dy="22.1">Nondecorative embedded image regions</tspan>
+<tspan x="598" dy="22.1">Flag only necessary pages / regions</tspan>
+</text>
+<polyline points="510,990 580,990" fill="none" stroke="#475569" stroke-width="1.7" marker-end="url(#arrow)"/>
+<text x="525" y="977" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#475569">
+<tspan x="525" dy="0">page</tspan>
+</text>
+<rect x="1090" y="930" width="440" height="190" rx="5" fill="#daf5ed" stroke="#334155" stroke-width="1.5"/>
+<text x="1108" y="965" font-family="Helvetica,Arial,sans-serif" font-size="21" fill="#0f172a">
+<tspan x="1108" dy="0">Flagged OCR only</tspan>
+</text>
+<text x="1108" y="996" font-family="Helvetica,Arial,sans-serif" font-size="17" fill="#0f172a">
+<tspan x="1108" dy="0">RapidOCR + local ONNX models</tspan>
+<tspan x="1108" dy="22.1">Concurrent region tasks; cached engines</tspan>
+<tspan x="1108" dy="22.1">Bounded render / crop / upscale</tspan>
+<tspan x="1108" dy="22.1">No runtime model download</tspan>
+<tspan x="1108" dy="22.1">Clean pages never enter OCR</tspan>
+</text>
+<polyline points="1020,990 1090,990" fill="none" stroke="#475569" stroke-width="1.7" marker-end="url(#arrow)"/>
+<text x="1024" y="977" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#475569">
+<tspan x="1024" dy="0">flagged</tspan>
+</text>
+<rect x="70" y="1210" width="440" height="180" rx="5" fill="#e7f0ff" stroke="#334155" stroke-width="1.5"/>
+<text x="88" y="1245" font-family="Helvetica,Arial,sans-serif" font-size="21" fill="#0f172a">
+<tspan x="88" dy="0">Reconcile sources + images</tspan>
+</text>
+<text x="88" y="1276" font-family="Helvetica,Arial,sans-serif" font-size="17" fill="#0f172a">
+<tspan x="88" dy="0">Keep readable direct text on disagreement</tspan>
+<tspan x="88" dy="22.1">Flag uncertain source conflicts</tspan>
+<tspan x="88" dy="22.1">Preserve image crops in JSON</tspan>
+<tspan x="88" dy="22.1">Repeated small logos marked decorative</tspan>
+<tspan x="88" dy="22.1">Never insert image placeholders</tspan>
+</text>
+<polyline points="290,1120 290,1210" fill="none" stroke="#475569" stroke-width="1.7" marker-end="url(#arrow)"/>
+<text x="307" y="1168" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#475569">
+<tspan x="307" dy="0">direct blocks</tspan>
+</text>
+<polyline points="1310,1120 1310,1170 530,1170 530,1250 510,1250" fill="none" stroke="#475569" stroke-width="1.7" marker-end="url(#arrow)"/>
+<text x="840" y="1155" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#475569">
+<tspan x="840" dy="0">OCR blocks + confidence</tspan>
+</text>
+<rect x="580" y="1210" width="440" height="180" rx="5" fill="#e7f0ff" stroke="#334155" stroke-width="1.5"/>
+<text x="598" y="1245" font-family="Helvetica,Arial,sans-serif" font-size="21" fill="#0f172a">
+<tspan x="598" dy="0">Shared layout regions</tspan>
+</text>
+<text x="598" y="1276" font-family="Helvetica,Arial,sans-serif" font-size="17" fill="#0f172a">
+<tspan x="598" dy="0">Preserved source observations</tspan>
+<tspan x="598" dy="22.1">Explicit region boundaries and provenance</tspan>
+<tspan x="598" dy="22.1">Boundary-aware line grouping</tspan>
+<tspan x="598" dy="22.1">Tables, cards and column reading order</tspan>
+<tspan x="598" dy="22.1">Recognition / layout confidence</tspan>
+</text>
+<polyline points="510,1320 580,1320" fill="none" stroke="#475569" stroke-width="1.7" marker-end="url(#arrow)"/>
+<rect x="1090" y="1210" width="440" height="180" rx="5" fill="#eee8ff" stroke="#334155" stroke-width="1.5"/>
+<text x="1108" y="1245" font-family="Helvetica,Arial,sans-serif" font-size="21" fill="#0f172a">
+<tspan x="1108" dy="0">Markdown sanitizer</tspan>
+</text>
+<text x="1108" y="1276" font-family="Helvetica,Arial,sans-serif" font-size="17" fill="#0f172a">
+<tspan x="1108" dy="0">Text-only Unicode and whitespace</tspan>
+<tspan x="1108" dy="22.1">Hyphens and list syntax</tspan>
+<tspan x="1108" dy="22.1">Font-ranked heading levels + paths</tspan>
+<tspan x="1108" dy="22.1">Strip repeated headers / footers</tspan>
+<tspan x="1108" dy="22.1">Tables keep a consistent column count</tspan>
+</text>
+<polyline points="1020,1320 1090,1320" fill="none" stroke="#475569" stroke-width="1.7" marker-end="url(#arrow)"/>
+<rect x="70" y="1470" width="950" height="150" rx="5" fill="#eee8ff" stroke="#334155" stroke-width="1.5"/>
+<text x="88" y="1505" font-family="Helvetica,Arial,sans-serif" font-size="21" fill="#0f172a">
+<tspan x="88" dy="0">Published outputs</tspan>
+</text>
+<text x="88" y="1536" font-family="Helvetica,Arial,sans-serif" font-size="17" fill="#0f172a">
+<tspan x="88" dy="0">Clean markdown is the sole ingestion source: real content only</tspan>
+<tspan x="88" dy="22.1">Structured JSON: pages, typed blocks, boxes, sources, confidence, stats and warnings</tspan>
+<tspan x="88" dy="22.1">Images remain JSON assets; OCR text and captions become real text</tspan>
+<tspan x="88" dy="22.1">Checkpoints preserve progress; one bad page or block does not fail the document</tspan>
+</text>
+<polyline points="1310,1390 1310,1430 545,1430 545,1470" fill="none" stroke="#475569" stroke-width="1.7" marker-end="url(#arrow)"/>
+<rect x="1090" y="1470" width="440" height="150" rx="5" fill="#fff2cc" stroke="#334155" stroke-width="1.5"/>
+<text x="1108" y="1505" font-family="Helvetica,Arial,sans-serif" font-size="21" fill="#0f172a">
+<tspan x="1108" dy="0">Warnings stay visible</tspan>
+</text>
+<text x="1108" y="1536" font-family="Helvetica,Arial,sans-serif" font-size="17" fill="#0f172a">
+<tspan x="1108" dy="0">Corrupted or timed-out pages</tspan>
+<tspan x="1108" dy="22.1">Empty output and uncertain OCR</tspan>
+<tspan x="1108" dy="22.1">Viewer warning panel + result JSON</tspan>
+<tspan x="1108" dy="22.1">Confidence is provisional</tspan>
+</text>
+<polyline points="1020,1545 1090,1545" fill="none" stroke="#475569" stroke-width="1.7" marker-end="url(#arrow)"/>
+<polyline points="1530,1545 1570,1545 1570,745 1530,745" fill="none" stroke="#475569" stroke-width="1.7" marker-end="url(#arrow)"/>
+<text x="1501" y="1415" font-family="Helvetica,Arial,sans-serif" font-size="15" fill="#475569">
+<tspan x="1501" dy="0">persist</tspan>
+</text>
+<text x="70" y="1682" font-family="Helvetica,Arial,sans-serif" font-size="17" fill="#475569">
+<tspan x="70" dy="0">BLUE: direct read / service    TEAL: OCR    PURPLE: outputs    AMBER: validation / warnings</tspan>
+</text>
+<text x="70" y="1736" font-family="Helvetica,Arial,sans-serif" font-size="21" fill="#0f172a">
+<tspan x="70" dy="0">Scope boundary</tspan>
+</text>
+<text x="70" y="1768" font-family="Helvetica,Arial,sans-serif" font-size="18" fill="#475569">
+<tspan x="70" dy="0">No embeddings, chunking, vector search, LLM answering, authentication or URL ingestion.</tspan>
+<tspan x="70" dy="23.400000000000002">A separate downstream RAG system may consume clean markdown; it is outside this service.</tspan>
+</text>
+</svg>

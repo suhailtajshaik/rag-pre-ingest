@@ -1,0 +1,13 @@
+.git
+.venv
+__pycache__
+.pytest_cache
+.mypy_cache
+.ruff_cache
+data
+.env
+BUILD_PROMPT.md
+AGENTS.md
+.code-review-graph
+viewer/node_modules
+viewer/dist

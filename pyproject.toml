@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rag-pre-ingest"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+  "fastapi", "pydantic", "uvicorn", "python-multipart", "filetype",
+  "pypdfium2", "python-docx", "openpyxl", "Pillow",
+  "rapidocr", "onnxruntime",
+]
+
+[project.optional-dependencies]
+dev = ["pytest", "ruff", "mypy", "pre-commit", "httpx"]
+
+[tool.setuptools]
+packages = ["rag_pre_ingest", "rag_pre_ingest.api", "rag_pre_ingest.services", "rag_pre_ingest.pipeline", "rag_pre_ingest.models", "rag_pre_ingest.storage"]
+
+[tool.setuptools.package-dir]
+rag_pre_ingest = "src"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "--import-mode=importlib"
+
+[tool.ruff]
+target-version = "py312"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["rag_pre_ingest"]
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+
+[[tool.mypy.overrides]]
+module = ["filetype.*", "pypdfium2.*", "openpyxl.*", "onnxruntime.*"]
+ignore_missing_imports = true

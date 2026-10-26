@@ -1,0 +1,1473 @@
+[
+  {
+    "file": "01-clean.pdf",
+    "expected_validation": "accepted",
+    "failures": [],
+    "actual_validation": "accepted",
+    "stats": {
+      "pages": {
+        "total": 1,
+        "read": 1,
+        "ocr": 0,
+        "mixed": 0
+      },
+      "images": {
+        "total": 0,
+        "decorative": 0,
+        "with_ocr_text": 0
+      },
+      "tables": {
+        "total": 0,
+        "with_merged_cells": 0
+      },
+      "headings": 1,
+      "paragraphs": 1,
+      "lists": 0,
+      "warnings": {
+        "total": 0,
+        "by_code": {}
+      },
+      "duration_seconds": 0.31559779192321
+    },
+    "warnings": [],
+    "markdown_excerpt": "# Clean document title\n\nOrdinary readable paragraph."
+  },
+  {
+    "file": "02-repeated.pdf",
+    "expected_validation": "accepted",
+    "failures": [],
+    "actual_validation": "accepted",
+    "stats": {
+      "pages": {
+        "total": 3,
+        "read": 3,
+        "ocr": 0,
+        "mixed": 0
+      },
+      "images": {
+        "total": 0,
+        "decorative": 0,
+        "with_ocr_text": 0
+      },
+      "tables": {
+        "total": 0,
+        "with_merged_cells": 0
+      },
+      "headings": 0,
+      "paragraphs": 3,
+      "lists": 0,
+      "warnings": {
+        "total": 0,
+        "by_code": {}
+      },
+      "duration_seconds": 0.8257562080398202
+    },
+    "warnings": [],
+    "markdown_excerpt": "Unique content for section 1\n\nUnique content for section 2\n\nUnique content for section 3"
+  },
+  {
+    "file": "03-two-columns.pdf",
+    "expected_validation": "accepted",
+    "failures": [],
+    "actual_validation": "accepted",
+    "stats": {
+      "pages": {
+        "total": 1,
+        "read": 1,
+        "ocr": 0,
+        "mixed": 0
+      },
+      "images": {
+        "total": 0,
+        "decorative": 0,
+        "with_ocr_text": 0
+      },
+      "tables": {
+        "total": 0,
+        "with_merged_cells": 0
+      },
+      "headings": 1,
+      "paragraphs": 4,
+      "lists": 0,
+      "warnings": {
+        "total": 0,
+        "by_code": {}
+      },
+      "duration_seconds": 0.31909541599452496
+    },
+    "warnings": [],
+    "markdown_excerpt": "# Full width heading\n\nLeft first paragraph\n\nLeft second paragraph\n\nRight first paragraph\n\nRight second paragraph"
+  },
+  {
+    "file": "04-ruled-table.pdf",
+    "expected_validation": "accepted",
+    "failures": [],
+    "actual_validation": "accepted",
+    "stats": {
+      "pages": {
+        "total": 1,
+        "read": 1,
+        "ocr": 0,
+        "mixed": 0
+      },
+      "images": {
+        "total": 0,
+        "decorative": 0,
+        "with_ocr_text": 0
+      },
+      "tables": {
+        "total": 1,
+        "with_merged_cells": 0
+      },
+      "headings": 0,
+      "paragraphs": 0,
+      "lists": 0,
+      "warnings": {
+        "total": 0,
+        "by_code": {}
+      },
+      "duration_seconds": 0.2991207919549197
+    },
+    "warnings": [],
+    "markdown_excerpt": "| Name | Qty | Total |\n| --- | --- | --- |\n| Widget |  | 9.50 |\n| Merged label |  |  |"
+  },
+  {
+    "file": "05-merged-grid.pdf",
+    "expected_validation": "accepted",
+    "failures": [],
+    "actual_validation": "accepted",
+    "stats": {
+      "pages": {
+        "total": 1,
+        "read": 1,
+        "ocr": 0,
+        "mixed": 0
+      },
+      "images": {
+        "total": 0,
+        "decorative": 0,
+        "with_ocr_text": 0
+      },
+      "tables": {
+        "total": 1,
+        "with_merged_cells": 1
+      },
+      "headings": 0,
+      "paragraphs": 0,
+      "lists": 0,
+      "warnings": {
+        "total": 0,
+        "by_code": {}
+      },
+      "duration_seconds": 0.29599958402104676
+    },
+    "warnings": [],
+    "markdown_excerpt": "| Name | Qty | Total |\n| --- | --- | --- |\n| Widget |  | 9.50 |\n| Merged label |  |  |"
+  },
+  {
+    "file": "06-unruled-table.pdf",
+    "expected_validation": "accepted",
+    "failures": [],
+    "actual_validation": "accepted",
+    "stats": {
+      "pages": {
+        "total": 1,
+        "read": 1,
+        "ocr": 0,
+        "mixed": 0
+      },
+      "images": {
+        "total": 0,
+        "decorative": 0,
+        "with_ocr_text": 0
+      },
+      "tables": {
+        "total": 1,
+        "with_merged_cells": 0
+      },
+      "headings": 0,
+      "paragraphs": 0,
+      "lists": 0,
+      "warnings": {
+        "total": 0,
+        "by_code": {}
+      },
+      "duration_seconds": 0.29115320881828666
+    },
+    "warnings": [],
+    "markdown_excerpt": "| Item | Quantity | Amount |\n| --- | --- | --- |\n| Bolts | 2 | 10.00 |\n| Nuts | 4 | 5.00 |"
+  },
+  {
+    "file": "07-scan.pdf",
+    "expected_validation": "accepted",
+    "failures": [],
+    "actual_validation": "accepted",
+    "stats": {
+      "pages": {
+        "total": 1,
+        "read": 0,
+        "ocr": 1,
+        "mixed": 0
+      },
+      "images": {
+        "total": 1,
+        "decorative": 0,
+        "with_ocr_text": 1
+      },
+      "tables": {
+        "total": 0,
+        "with_merged_cells": 0
+      },
+      "headings": 0,
+      "paragraphs": 1,
+      "lists": 0,
+      "warnings": {
+        "total": 0,
+        "by_code": {}
+      },
+      "duration_seconds": 0.9992603338323534
+    },
+    "warnings": [],
+    "markdown_excerpt": "SCANNED DOCUMENT Invoice total 123.45"
+  },
+  {
+    "file": "08-mixed.pdf",
+    "expected_validation": "accepted",
+    "failures": [],
+    "actual_validation": "accepted",
+    "stats": {
+      "pages": {
+        "total": 1,
+        "read": 0,
+        "ocr": 0,
+        "mixed": 1
+      },
+      "images": {
+        "total": 1,
+        "decorative": 0,
+        "with_ocr_text": 1
+      },
+      "tables": {
+        "total": 0,
+        "with_merged_cells": 0
+      },
+      "headings": 0,
+      "paragraphs": 2,
+      "lists": 0,
+      "warnings": {
+        "total": 0,
+        "by_code": {}
+      },
+      "duration_seconds": 1.0327341668307781
+    },
+    "warnings": [],
+    "markdown_excerpt": "Digital introduction\n\nSCANNED DOCUMENT Invoice total 123.45"
+  },
+  {
+    "file": "09-caption.pdf",
+    "expected_validation": "accepted",
+    "failures": [],
+    "actual_validation": "accepted",
+    "stats": {
+      "pages": {
+        "total": 1,
+        "read": 0,
+        "ocr": 0,
+        "mixed": 1
+      },
+      "images": {
+        "total": 1,
+        "decorative": 0,
+        "with_ocr_text": 1
+      },
+      "tables": {
+        "total": 0,
+        "with_merged_cells": 0
+      },
+      "headings": 0,
+      "paragraphs": 2,
+      "lists": 0,
+      "warnings": {
+        "total": 0,
+        "by_code": {}
+      },
+      "duration_seconds": 1.1201497081201524
+    },
+    "warnings": [],
+    "markdown_excerpt": "SCANNED DOCUMENT Invoice total 123.45\n\nFigure 1: Invoice sample"
+  },
+  {
+    "file": "10-logo.pdf",
+    "expected_validation": "accepted",
+    "failures": [],
+    "actual_validation": "accepted",
+    "stats": {
+      "pages": {
+        "total": 3,
+        "read": 0,
+        "ocr": 0,
+        "mixed": 3
+      },
+      "images": {
+        "total": 3,
+        "decorative": 3,
+        "with_ocr_text": 0
+      },
+      "tables": {
+        "total": 0,
+        "with_merged_cells": 0
+      },
+      "headings": 0,
+      "paragraphs": 3,
+      "lists": 0,
+      "warnings": {
+        "total": 0,
+        "by_code": {}
+      },
+      "duration_seconds": 3.8879175840411335
+    },
+    "warnings": [],
+    "markdown_excerpt": "Body page 1\n\nBody page 2\n\nBody page 3"
+  },
+  {
+    "file": "11-hyphen-wrap.pdf",
+    "expected_validation": "accepted",
+    "failures": [],
+    "actual_validation": "accepted",
+    "stats": {
+      "pages": {
+        "total": 1,
+        "read": 1,
+        "ocr": 0,
+        "mixed": 0
+      },
+      "images": {
+        "total": 0,
+        "decorative": 0,
+        "with_ocr_text": 0
+      },
+      "tables": {
+        "total": 0,
+        "with_merged_cells": 0
+      },
+      "headings": 0,
+      "paragraphs": 2,
+      "lists": 0,
+      "warnings": {
+        "total": 0,
+        "by_code": {}
+      },
+      "duration_seconds": 0.3088625830132514
+    },
+    "warnings": [],
+    "markdown_excerpt": "A broken paragraph continues here.\n\nA real well-known phrase."
+  },
+  {
+    "file": "12-blank.pdf",
+    "expected_validation": "accepted",
+    "failures": [],
+    "actual_validation": "accepted",
+    "stats": {
+      "pages": {
+        "total": 1,
+        "read": 1,
+        "ocr": 0,
+        "mixed": 0
+      },
+      "images": {
+        "total": 0,
+        "decorative": 0,
+        "with_ocr_text": 0
+      },
+      "tables": {
+        "total": 0,
+        "with_merged_cells": 0
+      },
+      "headings": 0,
+      "paragraphs": 0,
+      "lists": 0,
+      "warnings": {
+        "total": 1,
+        "by_code": {
+          "empty_document": 1
+        }
+      },
+      "duration_seconds": 0.27245208411477506
+    },
+    "warnings": [
+      {
+        "page_number": null,
+        "code": "empty_document",
+        "message": "No readable text was found."
+      }
+    ],
+    "markdown_excerpt": ""
+  },
+  {
+    "file": "13-wrong-extension.docx",
+    "expected_validation": "accepted",
+    "failures": [],
+    "actual_validation": "accepted",
+    "stats": {
+      "pages": {
+        "total": 1,
+        "read": 1,
+        "ocr": 0,
+        "mixed": 0
+      },
+      "images": {
+        "total": 0,
+        "decorative": 0,
+        "with_ocr_text": 0
+      },
+      "tables": {
+        "total": 0,
+        "with_merged_cells": 0
+      },
+      "headings": 1,
+      "paragraphs": 1,
+      "lists": 0,
+      "warnings": {
+        "total": 0,
+        "by_code": {}
+      },
+      "duration_seconds": 0.2867898750118911
+    },
+    "warnings": [],
+    "markdown_excerpt": "# Clean document title\n\nOrdinary readable paragraph."
+  },
+  {
+    "file": "14-corrupted.pdf",
+    "expected_validation": "corrupted_file",
+    "failures": [],
+    "actual_validation": "corrupted_file"
+  },
+  {
+    "file": "15-empty.pdf",
+    "expected_validation": "empty_file",
+    "failures": [],
+    "actual_validation": "empty_file"
+  },
+  {
+    "file": "16-small-limit.pdf",
+    "expected_validation": "file_too_large",
+    "failures": [],
+    "actual_validation": "file_too_large"
+  },
+  {
+    "file": "17-page-limit.pdf",
+    "expected_validation": "too_many_pages",
+    "failures": [],
+    "actual_validation": "too_many_pages"
+  },
+  {
+    "file": "18-structured.docx",
+    "expected_validation": "accepted",
+    "failures": [],
+    "actual_validation": "accepted",
+    "stats": {
+      "pages": {
+        "total": 1,
+        "read": 0,
+        "ocr": 0,
+        "mixed": 1
+      },
+      "images": {
+        "total": 1,
+        "decorative": 0,
+        "with_ocr_text": 1
+      },
+      "tables": {
+        "total": 1,
+        "with_merged_cells": 1
+      },
+      "headings": 2,
+      "paragraphs": 5,
+      "lists": 2,
+      "warnings": {
+        "total": 1,
+        "by_code": {
+          "synthetic_page": 1
+        }
+      },
+      "duration_seconds": 0.8655390420462936
+    },
+    "warnings": [
+      {
+        "page_number": 1,
+        "code": "synthetic_page",
+        "message": "Word preview uses a synthetic page; coordinates are not source pagination."
+      }
+    ],
+    "markdown_excerpt": "# Unicode and structure\n\n# Chapter one\n\nLigatures fi fl; nonbreaking space; caf\u00e9 r\u00e9sum\u00e9.\n\nCurly \u201cquotes\u201d and apostrophe \u2019; en\u2013dash em\u2014dash; \u00a3 \u20ac \u00a5; \u00b1 \u00d7 \u00f7 \u2264 \u2265 \u2260 \u2211.\n\n\u0627\u0644\u0639\u0631\u0628\u064a\u0629 \u0939\u093f\u0928\u094d\u0926\u0940 \u4e2d\u6587 \u65e5\u672c\u8a9e \ud55c\uad6d\uc5b4\n\n- First bullet\n\n1. First numbered item\n\n| Name | Qty | Total |\n| --- | --- | --- |\n| Widget |  | 12.50 |\n| Merged label |  |  |\n\nSCANNED DOCUMENT Invoice total 123.45\n\nFigure 1: Embedded invoice"
+  },
+  {
+    "file": "19-structured.xlsx",
+    "expected_validation": "accepted",
+    "failures": [],
+    "actual_validation": "accepted",
+    "stats": {
+      "pages": {
+        "total": 2,
+        "read": 2,
+        "ocr": 0,
+        "mixed": 0
+      },
+      "images": {
+        "total": 0,
+        "decorative": 0,
+        "with_ocr_text": 0
+      },
+      "tables": {
+        "total": 1,
+        "with_merged_cells": 1
+      },
+      "headings": 2,
+      "paragraphs": 0,
+      "lists": 0,
+      "warnings": {
+        "total": 2,
+        "by_code": {
+          "synthetic_page": 2
+        }
+      },
+      "duration_seconds": 0.019115458941087127
+    },
+    "warnings": [
+      {
+        "page_number": 1,
+        "code": "synthetic_page",
+        "message": "Each worksheet is represented as a synthetic page."
+      },
+      {
+        "page_number": 2,
+        "code": "synthetic_page",
+        "message": "Each worksheet is represented as a synthetic page."
+      }
+    ],
+    "markdown_excerpt": "# Numbers\n\n|  |  |  |  |\n| --- | --- | --- | --- |\n| Item | Qty | Price | Total |\n| Widget | 2 |  | 12.5 |\n| Blank |  | 3.5 |  |\n|  |  |  |  |\n| Merged total |  |  |  |\n|  |  |  |  |\n| caf\u00e9 \u201cquotes\u201d \u00a3 \u20ac \u00a5 \u00b1 \u2264 \u2265 |  |  |  |\n| \u0627\u0644\u0639\u0631\u0628\u064a\u0629 \u0939\u093f\u0928\u094d\u0926\u0940 \u4e2d\u6587 \u65e5\u672c\u8a9e \ud55c\uad6d\uc5b4 |  |  |  |\n\n# Empty sheet"
+  },
+  {
+    "file": "20-scan.png",
+    "expected_validation": "accepted",
+    "failures": [],
+    "actual_validation": "accepted",
+    "stats": {
+      "pages": {
+        "total": 1,
+        "read": 0,
+        "ocr": 1,
+        "mixed": 0
+      },
+      "images": {
+        "total": 1,
+        "decorative": 0,
+        "with_ocr_text": 1
+      },
+      "tables": {
+        "total": 0,
+        "with_merged_cells": 0
+      },
+      "headings": 0,
+      "paragraphs": 1,
+      "lists": 0,
+      "warnings": {
+        "total": 0,
+        "by_code": {}
+      },
+      "duration_seconds": 1.0636531659401953
+    },
+    "warnings": [],
+    "markdown_excerpt": "SCANNED DOCUMENT Invoice total 123.45"
+  },
+  {
+    "file": "21-scan.jpg",
+    "expected_validation": "accepted",
+    "failures": [],
+    "actual_validation": "accepted",
+    "stats": {
+      "pages": {
+        "total": 1,
+        "read": 0,
+        "ocr": 1,
+        "mixed": 0
+      },
+      "images": {
+        "total": 1,
+        "decorative": 0,
+        "with_ocr_text": 1
+      },
+      "tables": {
+        "total": 0,
+        "with_merged_cells": 0
+      },
+      "headings": 0,
+      "paragraphs": 1,
+      "lists": 0,
+      "warnings": {
+        "total": 0,
+        "by_code": {}
+      },
+      "duration_seconds": 1.0091105420142412
+    },
+    "warnings": [],
+    "markdown_excerpt": "SCANNED DOCUMENT Invoice total 123.45"
+  },
+  {
+    "file": "22-multipage.tiff",
+    "expected_validation": "accepted",
+    "failures": [],
+    "actual_validation": "accepted",
+    "stats": {
+      "pages": {
+        "total": 2,
+        "read": 0,
+        "ocr": 2,
+        "mixed": 0
+      },
+      "images": {
+        "total": 2,
+        "decorative": 0,
+        "with_ocr_text": 2
+      },
+      "tables": {
+        "total": 0,
+        "with_merged_cells": 0
+      },
+      "headings": 0,
+      "paragraphs": 3,
+      "lists": 0,
+      "warnings": {
+        "total": 0,
+        "by_code": {}
+      },
+      "duration_seconds": 1.3177665420807898
+    },
+    "warnings": [],
+    "markdown_excerpt": "SCANNED DOCUMENT Invoice total 123.45\n\nInvoice total 123.45\n\nSCANNED DOCUMENT"
+  },
+  {
+    "file": "23-image-limit.png",
+    "expected_validation": "image_too_large",
+    "failures": [],
+    "actual_validation": "image_too_large"
+  },
+  {
+    "file": "24-compression-limit.docx",
+    "expected_validation": "archive_limit_exceeded",
+    "failures": [],
+    "actual_validation": "archive_limit_exceeded"
+  },
+  {
+    "file": "25-encrypted-office.docx",
+    "expected_validation": "encrypted_or_legacy_office",
+    "failures": [],
+    "actual_validation": "encrypted_or_legacy_office"
+  },
+  {
+    "file": "26-truncated.pdf",
+    "expected_validation": "corrupted_file",
+    "failures": [],
+    "actual_validation": "corrupted_file"
+  },
+  {
+    "file": "27-unsupported.txt",
+    "expected_validation": "unsupported_file_type",
+    "failures": [],
+    "actual_validation": "unsupported_file_type"
+  },
+  {
+    "file": "28-corrupt-image.png",
+    "expected_validation": "corrupted_file",
+    "failures": [],
+    "actual_validation": "corrupted_file"
+  },
+  {
+    "file": "29-image-page-limit.tiff",
+    "expected_validation": "too_many_pages",
+    "failures": [],
+    "actual_validation": "too_many_pages"
+  },
+  {
+    "file": "automation-workshop.png",
+    "expected_validation": "accepted",
+    "failures": [],
+    "actual_validation": "accepted",
+    "stats": {
+      "pages": {
+        "total": 1,
+        "read": 0,
+        "ocr": 1,
+        "mixed": 0
+      },
+      "images": {
+        "total": 1,
+        "decorative": 0,
+        "with_ocr_text": 1
+      },
+      "tables": {
+        "total": 0,
+        "with_merged_cells": 0
+      },
+      "headings": 0,
+      "paragraphs": 8,
+      "lists": 3,
+      "warnings": {
+        "total": 4,
+        "by_code": {
+          "decorative_ocr_ignored": 1,
+          "low_ocr_confidence": 1,
+          "table_inconsistent": 1,
+          "reading_order_uncertain": 1
+        }
+      },
+      "duration_seconds": 2.3373973751440644
+    },
+    "warnings": [
+      {
+        "page_number": 1,
+        "code": "decorative_ocr_ignored",
+        "message": "A detected graphic mark was omitted from clean text."
+      },
+      {
+        "page_number": 1,
+        "code": "low_ocr_confidence",
+        "message": "OCR text has provisional low confidence."
+      },
+      {
+        "page_number": 1,
+        "code": "table_inconsistent",
+        "message": "Aligned text lacks a clear table region; originals were preserved."
+      },
+      {
+        "page_number": 1,
+        "code": "reading_order_uncertain",
+        "message": "Overlapping blocks have no clean gap; order is provisional."
+      }
+    ],
+    "markdown_excerpt": "Day 4: 2nd April / 30th April\n\nTimings : 7.30PM IST To 11.00PM IST / 10.00AM EST To 1.30PM EST\n\nAI Automations - Introduction To Automation With N8n\n\nOutcome:\n\n- Basics Of Automations Using N8n\n\n- Understanding Trigger & Actions In Automations\n\n- Learn To Connect Sheet, Slack, ChatGPT Using N8n\n\nDuration: 3 Hours | LIVE\n\nn8n\n\nslack\n\nGoogle Sheets",
+    "transcription_metrics": {
+      "cer": 0.0,
+      "wer": 0.0,
+      "exact": true,
+      "split": "regression",
+      "scope": "full visible text, left panel then right labels",
+      "meets_target": true
+    }
+  },
+  {
+    "file": "hackathon-guidelines.png",
+    "expected_validation": "accepted",
+    "failures": [],
+    "actual_validation": "accepted",
+    "stats": {
+      "pages": {
+        "total": 1,
+        "read": 0,
+        "ocr": 1,
+        "mixed": 0
+      },
+      "images": {
+        "total": 1,
+        "decorative": 0,
+        "with_ocr_text": 1
+      },
+      "tables": {
+        "total": 0,
+        "with_merged_cells": 0
+      },
+      "headings": 0,
+      "paragraphs": 14,
+      "lists": 23,
+      "warnings": {
+        "total": 5,
+        "by_code": {
+          "decorative_ocr_ignored": 1,
+          "low_ocr_confidence": 1,
+          "reading_order_uncertain": 3
+        }
+      },
+      "duration_seconds": 5.851686916081235
+    },
+    "warnings": [
+      {
+        "page_number": 1,
+        "code": "decorative_ocr_ignored",
+        "message": "A detected graphic mark was omitted from clean text."
+      },
+      {
+        "page_number": 1,
+        "code": "low_ocr_confidence",
+        "message": "OCR text has provisional low confidence."
+      },
+      {
+        "page_number": 1,
+        "code": "reading_order_uncertain",
+        "message": "Overlapping blocks have no clean gap; order is provisional."
+      },
+      {
+        "page_number": 1,
+        "code": "reading_order_uncertain",
+        "message": "Overlapping blocks have no clean gap; order is provisional."
+      },
+      {
+        "page_number": 1,
+        "code": "reading_order_uncertain",
+        "message": "Overlapping blocks have no clean gap; order is provisional."
+      }
+    ],
+    "markdown_excerpt": "HACKATHON\n\nAGENT\n\nSTACKING\n\nBuild Sprint\n\nMonday, May 4 \u2013 Friday, May 8\n\nRules & Guidelines\n\n- Teams should collaborate and build a single cohesive solution\n\nChallenge Selection:\n\n- Each team must select one official use case from the provided challenge pack\n\n- Teams should align their solution to the defined user, workflow, and problem statement\n\nBuild Expectations:\n\n- Solutions must demonstrate AI agent-based workflows (not just standalone prompt or chatbot\n\n- Teams are encouraged to leverage agent chaining, orchestration, or multi-step reasoning\n\n- The focus is on functionality, creativity, and real-world applicability\n\nTools & Technology\n\n- Teams may use approved tools and platforms provided for the hackathon\n\n- External tools/APIs are not allowed\n\n- All solutions should comply with in"
+  },
+  {
+    "file": "image-models.png",
+    "expected_validation": "accepted",
+    "failures": [],
+    "actual_validation": "accepted",
+    "stats": {
+      "pages": {
+        "total": 1,
+        "read": 0,
+        "ocr": 1,
+        "mixed": 0
+      },
+      "images": {
+        "total": 1,
+        "decorative": 0,
+        "with_ocr_text": 1
+      },
+      "tables": {
+        "total": 0,
+        "with_merged_cells": 0
+      },
+      "headings": 0,
+      "paragraphs": 11,
+      "lists": 0,
+      "warnings": {
+        "total": 3,
+        "by_code": {
+          "decorative_ocr_ignored": 2,
+          "low_ocr_confidence": 1
+        }
+      },
+      "duration_seconds": 2.0850202089641243
+    },
+    "warnings": [
+      {
+        "page_number": 1,
+        "code": "decorative_ocr_ignored",
+        "message": "A detected graphic mark was omitted from clean text."
+      },
+      {
+        "page_number": 1,
+        "code": "low_ocr_confidence",
+        "message": "OCR text has provisional low confidence."
+      },
+      {
+        "page_number": 1,
+        "code": "decorative_ocr_ignored",
+        "message": "A detected graphic mark was omitted from clean text."
+      }
+    ],
+    "markdown_excerpt": "The AI Model Landscape\n\nImage Models\n\nMidjourney\n\nGoogle Google\n\nByteDance lu ByteDance\n\nOpenAI \u03b2OpenAI\n\nQwen \u5973Qwen [by Alibaba]\n\nBlack Forest Labs Black Forest Labs\n\nLeonardo Leonardo.Ai\n\nIdeogram\n\nReve"
+  },
+  {
+    "file": "learning-levels.png",
+    "expected_validation": "accepted",
+    "failures": [],
+    "actual_validation": "accepted",
+    "stats": {
+      "pages": {
+        "total": 1,
+        "read": 0,
+        "ocr": 1,
+        "mixed": 0
+      },
+      "images": {
+        "total": 1,
+        "decorative": 0,
+        "with_ocr_text": 1
+      },
+      "tables": {
+        "total": 0,
+        "with_merged_cells": 0
+      },
+      "headings": 0,
+      "paragraphs": 10,
+      "lists": 0,
+      "warnings": {
+        "total": 1,
+        "by_code": {
+          "table_inconsistent": 1
+        }
+      },
+      "duration_seconds": 3.039240082958713
+    },
+    "warnings": [
+      {
+        "page_number": 1,
+        "code": "table_inconsistent",
+        "message": "Aligned text lacks a clear table region; originals were preserved."
+      }
+    ],
+    "markdown_excerpt": "Level 1\n\nMaster advanced prompting techniques, experiment with multiple Al models, run open-source LLMs locally, and fine-tune parameters using OpenAl Playground.\n\nLevel 2\n\nIntegrate connectors using MCP\u2014both online and offline. Then, design system prompts to power fully autonomous voice agents.\n\nLevel 3\n\nLearn about Diffusion Models. Build your own Al Clone, Create Images & Videos, Ads, Branding Material, Movies\n\nLevel 4\n\nBuild complex automations & agentic workflows for process optimization. Get hands-on with Al Agents\n\nLevel 5\n\nBuild a real world Al Product without writing a single line of code!"
+  },
+  {
+    "file": "llm-flowchart.png",
+    "expected_validation": "accepted",
+    "failures": [],
+    "actual_validation": "accepted",
+    "stats": {
+      "pages": {
+        "total": 1,
+        "read": 0,
+        "ocr": 1,
+        "mixed": 0
+      },
+      "images": {
+        "total": 1,
+        "decorative": 0,
+        "with_ocr_text": 1
+      },
+      "tables": {
+        "total": 0,
+        "with_merged_cells": 0
+      },
+      "headings": 0,
+      "paragraphs": 20,
+      "lists": 0,
+      "warnings": {
+        "total": 3,
+        "by_code": {
+          "table_inconsistent": 1,
+          "reading_order_uncertain": 2
+        }
+      },
+      "duration_seconds": 3.402167374966666
+    },
+    "warnings": [
+      {
+        "page_number": 1,
+        "code": "table_inconsistent",
+        "message": "Aligned text lacks a clear table region; originals were preserved."
+      },
+      {
+        "page_number": 1,
+        "code": "reading_order_uncertain",
+        "message": "Overlapping blocks have no clean gap; order is provisional."
+      },
+      {
+        "page_number": 1,
+        "code": "reading_order_uncertain",
+        "message": "Overlapping blocks have no clean gap; order is provisional."
+      }
+    ],
+    "markdown_excerpt": "How\n\nDoes it\n\nwork?\n\nTokenization\n\nText is broken into tokens for the\n\nmodel to process\n\nEmbedding\n\nTokens are converted into numerical\n\nvectors that represent meaning\n\nTransformer Mechanism\n\nThe model uses attention to focus on the most relevant parts of input text.\n\nPrediction\n\nIt predicts the next word based on\n\nprior context\n\nResponse Generation\n\nThe model generates sentences by\n\niteratively predicting words, maintaining\n\nrelevance and coherence\n\nGrowth\n\nSchool\n\nTokenization \u2192 Embedding \u2192 Transformer Mechanism \u2192 Prediction \u2192 Response Generation"
+  },
+  {
+    "file": "ml-cyber-roles.pdf",
+    "expected_validation": "accepted",
+    "failures": [],
+    "actual_validation": "accepted",
+    "stats": {
+      "pages": {
+        "total": 2,
+        "read": 2,
+        "ocr": 0,
+        "mixed": 0
+      },
+      "images": {
+        "total": 0,
+        "decorative": 0,
+        "with_ocr_text": 0
+      },
+      "tables": {
+        "total": 2,
+        "with_merged_cells": 0
+      },
+      "headings": 2,
+      "paragraphs": 0,
+      "lists": 0,
+      "warnings": {
+        "total": 0,
+        "by_code": {}
+      },
+      "duration_seconds": 0.8850304579827935
+    },
+    "warnings": [],
+    "markdown_excerpt": "# ML & Data Roles \u2013 Job Titles, Core Skills, and\n\n# Day-to-Day Responsibilities\n\n| Job Title | Core Skills | Must-Have Day-to-Day Responsibilities |\n| --- | --- | --- |\n| MLOps Engineer / Senior MLOps Engineer | Python for production ML (APIs, testing, packaging) CI/CD for ML (GitHub Actions, GitLab CI, Jenkins) Docker & Kubernetes for model serving (EKS/GKE/AKS) Cloud ML stack (SageMaker, Vertex AI, Azure ML) Pipeline orchestration (Airflow, Kubeflow, Prefect) Model registry & experiment tracking (MLflow, W&B;) Monitoring & observability (Prometheus, Grafana, logs) Infrastructure as Code (Terraform/CloudFormation) | Build and maintain automated training and deployment pipelines for ML models Containerize models and deploy them to Kubernetes-based serving infrastructure Monitor production "
+  },
+  {
+    "file": "notebooklm-mind-map.png",
+    "expected_validation": "accepted",
+    "failures": [],
+    "actual_validation": "accepted",
+    "stats": {
+      "pages": {
+        "total": 1,
+        "read": 0,
+        "ocr": 1,
+        "mixed": 0
+      },
+      "images": {
+        "total": 1,
+        "decorative": 0,
+        "with_ocr_text": 1
+      },
+      "tables": {
+        "total": 0,
+        "with_merged_cells": 0
+      },
+      "headings": 0,
+      "paragraphs": 42,
+      "lists": 0,
+      "warnings": {
+        "total": 9,
+        "by_code": {
+          "low_ocr_confidence": 7,
+          "decorative_ocr_ignored": 1,
+          "table_inconsistent": 1
+        }
+      },
+      "duration_seconds": 5.501436874968931
+    },
+    "warnings": [
+      {
+        "page_number": 1,
+        "code": "low_ocr_confidence",
+        "message": "OCR text has provisional low confidence."
+      },
+      {
+        "page_number": 1,
+        "code": "low_ocr_confidence",
+        "message": "OCR text has provisional low confidence."
+      },
+      {
+        "page_number": 1,
+        "code": "low_ocr_confidence",
+        "message": "OCR text has provisional low confidence."
+      },
+      {
+        "page_number": 1,
+        "code": "low_ocr_confidence",
+        "message": "OCR text has provisional low confidence."
+      },
+      {
+        "page_number": 1,
+        "code": "low_ocr_confidence",
+        "message": "OCR text has provisional low confidence."
+      },
+      {
+        "page_number": 1,
+        "code": "low_ocr_confidence",
+        "message": "OCR text has provisional low confidence."
+      },
+      {
+        "page_number": 1,
+        "code": "low_ocr_confidence",
+        "message": "OCR text has provisional low confidence."
+      },
+      {
+        "page_number": 1,
+        "code": "decorative_ocr_ignored",
+        "message": "A detected graphic mark was omitted from clean text."
+      },
+      {
+        "page_number": 1,
+        "code": "table_inconsistent",
+        "message": "Aligned text lacks a clear table region; originals were preserved."
+      }
+    ],
+    "markdown_excerpt": "Joint Embedding Predictive Architecture (JEPA)\n\nCore Concept 0\n\nSystem Architecture\n\nImplementation Variants\n\nKey Advantages\n\nTraining Paradigms Q\n\nChallenges Addressed\n\nWorld Modeling\n\nLatent Space Prediction\n\nAbstract Representation\n\nSelf-Supervised Learning\n\nCore Modules 0\n\nSupport Modules Q\n\nI-JEPA (Images) Q\n\nV-JEPA (Video) \u00e8\n\nVL-JEPA (Vision-Language) e\n\nComputational Efficiency\n\nRobustness to Noise\n\nAvoidance of Representation Collapse\n\nHierarchical Planning Capability\n\nNon-Contrastive SSL\n\nVICReg (Variance-Invariance-Covariance)\n\nInfoNCE Loss\n\nMomentum Encoders\n\nHandling Uncertainty\n\nCommon Sense Acquisition\n\nMulti-scale Abstraction\n\nSample Inefficiency\n\nContext Encoder\n\nTarget Encoder\n\nPredictor Network\n\nConfigurator\n\nCost Module (Intrinsic & Critic)\n\nActor\n\nShort-Term Memory\n\nMas"
+  },
+  {
+    "file": "numbered-questions.png",
+    "expected_validation": "accepted",
+    "failures": [],
+    "actual_validation": "accepted",
+    "stats": {
+      "pages": {
+        "total": 1,
+        "read": 0,
+        "ocr": 1,
+        "mixed": 0
+      },
+      "images": {
+        "total": 1,
+        "decorative": 0,
+        "with_ocr_text": 1
+      },
+      "tables": {
+        "total": 0,
+        "with_merged_cells": 0
+      },
+      "headings": 0,
+      "paragraphs": 1,
+      "lists": 3,
+      "warnings": {
+        "total": 0,
+        "by_code": {}
+      },
+      "duration_seconds": 2.633706833003089
+    },
+    "warnings": [],
+    "markdown_excerpt": "EVALUATE\n\n1. DO I LIKE WHO I AM WHEN I'M AROUND THEM?\n\n2. DO THEY CHALLENGE ME IN WAYS THAT ELEVATE ME?\n\n3. DOES MY BEHAVIOR MOVE ME CLOSER OR FURTHER FROM MY VALUES?",
+    "transcription_metrics": {
+      "cer": 0.006134969325153374,
+      "wer": 0.029411764705882353,
+      "exact": false,
+      "split": "regression",
+      "scope": "full visible text",
+      "meets_target": false
+    }
+  },
+  {
+    "file": "python-code.png",
+    "expected_validation": "accepted",
+    "failures": [],
+    "actual_validation": "accepted",
+    "stats": {
+      "pages": {
+        "total": 1,
+        "read": 0,
+        "ocr": 1,
+        "mixed": 0
+      },
+      "images": {
+        "total": 1,
+        "decorative": 0,
+        "with_ocr_text": 1
+      },
+      "tables": {
+        "total": 0,
+        "with_merged_cells": 0
+      },
+      "headings": 0,
+      "paragraphs": 1,
+      "lists": 0,
+      "warnings": {
+        "total": 1,
+        "by_code": {
+          "ocr_code_review": 1
+        }
+      },
+      "duration_seconds": 2.2960775420069695
+    },
+    "warnings": [
+      {
+        "page_number": 1,
+        "code": "ocr_code_review",
+        "message": "Code was read from an image; review punctuation before reuse."
+      }
+    ],
+    "markdown_excerpt": "```python\nimport os\nfrom openai import OpenAI\n\nclient = OpenAI(\n    base_url=\"https://router.huggingface.co/v1\",\n    api_key=\"hf_token\",\n)\n\ncompletion = client.chat.completions.create(\n    model=\"meta-llama/Llama-3.1-8B-Instruct:novita\",\n    messages=[\n        {\n            \"role\": \"user\",\n            \"content\": \"What is the capital of France?\"\n        }\n    ],\n)\n\nprint(completion.choices[0].message.content)\n```"
+  },
+  {
+    "file": "sales-sheet.png",
+    "expected_validation": "accepted",
+    "failures": [],
+    "actual_validation": "accepted",
+    "stats": {
+      "pages": {
+        "total": 1,
+        "read": 0,
+        "ocr": 1,
+        "mixed": 0
+      },
+      "images": {
+        "total": 1,
+        "decorative": 0,
+        "with_ocr_text": 1
+      },
+      "tables": {
+        "total": 1,
+        "with_merged_cells": 0
+      },
+      "headings": 0,
+      "paragraphs": 45,
+      "lists": 2,
+      "warnings": {
+        "total": 31,
+        "by_code": {
+          "low_ocr_confidence": 21,
+          "decorative_ocr_ignored": 6,
+          "ocr_table_review": 1,
+          "reading_order_uncertain": 3
+        }
+      },
+      "duration_seconds": 13.475469416938722
+    },
+    "warnings": [
+      {
+        "page_number": 1,
+        "code": "low_ocr_confidence",
+        "message": "OCR text has provisional low confidence."
+      },
+      {
+        "page_number": 1,
+        "code": "decorative_ocr_ignored",
+        "message": "A detected graphic mark was omitted from clean text."
+      },
+      {
+        "page_number": 1,
+        "code": "low_ocr_confidence",
+        "message": "OCR text has provisional low confidence."
+      },
+      {
+        "page_number": 1,
+        "code": "low_ocr_confidence",
+        "message": "OCR text has provisional low confidence."
+      },
+      {
+        "page_number": 1,
+        "code": "low_ocr_confidence",
+        "message": "OCR text has provisional low confidence."
+      },
+      {
+        "page_number": 1,
+        "code": "low_ocr_confidence",
+        "message": "OCR text has provisional low confidence."
+      },
+      {
+        "page_number": 1,
+        "code": "low_ocr_confidence",
+        "message": "OCR text has provisional low confidence."
+      },
+      {
+        "page_number": 1,
+        "code": "low_ocr_confidence",
+        "message": "OCR text has provisional low confidence."
+      },
+      {
+        "page_number": 1,
+        "code": "low_ocr_confidence",
+        "message": "OCR text has provisional low confidence."
+      },
+      {
+        "page_number": 1,
+        "code": "decorative_ocr_ignored",
+        "message": "A detected graphic mark was omitted from clean text."
+      },
+      {
+        "page_number": 1,
+        "code": "decorative_ocr_ignored",
+        "message": "A detected graphic mark was omitted from clean text."
+      },
+      {
+        "page_number": 1,
+        "code": "decorative_ocr_ignored",
+        "message": "A detected graphic mark was omitted from clean text."
+      },
+      {
+        "page_number": 1,
+        "code": "low_ocr_confidence",
+        "message": "OCR text has provisional low confidence."
+      },
+      {
+        "page_number": 1,
+        "code": "decorative_ocr_ignored",
+        "message": "A detected graphic mark was omitted from clean text."
+      },
+      {
+        "page_number": 1,
+        "code": "low_ocr_confidence",
+        "message": "OCR text has provisional low confidence."
+      },
+      {
+        "page_number": 1,
+        "code": "low_ocr_confidence",
+        "message": "OCR text has provisional low confidence."
+      },
+      {
+        "page_number": 1,
+        "code": "low_ocr_confidence",
+        "message": "OCR text has provisional low confidence."
+      },
+      {
+        "page_number": 1,
+        "code": "low_ocr_confidence",
+        "message": "OCR text has provisional low confidence."
+      },
+      {
+        "page_number": 1,
+        "code": "low_ocr_confidence",
+        "message": "OCR text has provisional low confidence."
+      },
+      {
+        "page_number": 1,
+        "code": "low_ocr_confidence",
+        "message": "OCR text has provisional low confidence."
+      },
+      {
+        "page_number": 1,
+        "code": "decorative_ocr_ignored",
+        "message": "A detected graphic mark was omitted from clean text."
+      },
+      {
+        "page_number": 1,
+        "code": "low_ocr_confidence",
+        "message": "OCR text has provisional low confidence."
+      },
+      {
+        "page_number": 1,
+        "code": "low_ocr_confidence",
+        "message": "OCR text has provisional low confidence."
+      },
+      {
+        "page_number": 1,
+        "code": "low_ocr_confidence",
+        "message": "OCR text has provisional low confidence."
+      },
+      {
+        "page_number": 1,
+        "code": "low_ocr_confidence",
+        "message": "OCR text has provisional low confidence."
+      },
+      {
+        "page_number": 1,
+        "code": "low_ocr_confidence",
+        "message": "OCR text has provisional low confidence."
+      },
+      {
+        "page_number": 1,
+        "code": "ocr_table_review",
+        "message": "Table cells were read from visible image boundaries; review clipped text and uncertain values."
+      },
+      {
+        "page_number": 1,
+        "code": "low_ocr_confidence",
+        "message": "OCR text has provisional low confidence."
+      },
+      {
+        "page_number": 1,
+        "code": "reading_order_uncertain",
+        "message": "Overlapping blocks have no clean gap; order is provisional."
+      },
+      {
+        "page_number": 1,
+        "code": "reading_order_uncertain",
+        "message": "Overlapping blocks have no clean gap; order is provisional."
+      },
+      {
+        "page_number": 1,
+        "code": "reading_order_uncertain",
+        "message": "Overlapping blocks have no clean gap; order is provisional."
+      }
+    ],
+    "markdown_excerpt": "\u7530 Online Sales Data - I\n\n\u7530 2\n\nFile Edit View Insert Format Data Tools Gemini Extensions Help\n\nQ Menus \u308a \u3068 \u767d 100%\n\n- .00\n\n123 Defaul...\n\n10 \u5341 B I\n\nA D. \u7530 \u03be\n\n4 3 \u76ee\n\nG \u7530 \u56db \u4e86\u9b25\u0394\n\nG1\n\nfx Total Revenue\n\nA\n\nB\n\nC\n\nD\n\nE\n\nF\n\nG\n\nH\n\n1\n\nJ\n\nK\n\n1 2 3 4\n\n- 5 6 7 8 9 10 11 12 13 14 15 16\n\n| Transaction ID | Date | Product Category | Product Name | Units Sold | Unit Price | Total Revenue | Region | Payment Method |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| 10001 | 2024-01-01 | Electronics | iPhone 14 Pro | 2 | 999.99 | 1999.98 | North Americ | Credit Card |\n| 10002 | 2024-01-02 | Home Appliances | Dyson V11 Vacuum | 1 | 499.99 | 499.99 | Europe | PayPal |\n| 10003 | 2024-01-03 | Clothing | Levi's 501 Jeans | 3 | 69.99 | 209.97 | Asia | Debit Card |\n| 10004 | 2024-01-04 | Books | The Da Vinci C"
+  },
+  {
+    "file": "tech-stack.png",
+    "expected_validation": "accepted",
+    "failures": [],
+    "actual_validation": "accepted",
+    "stats": {
+      "pages": {
+        "total": 1,
+        "read": 0,
+        "ocr": 1,
+        "mixed": 0
+      },
+      "images": {
+        "total": 1,
+        "decorative": 0,
+        "with_ocr_text": 1
+      },
+      "tables": {
+        "total": 0,
+        "with_merged_cells": 0
+      },
+      "headings": 0,
+      "paragraphs": 19,
+      "lists": 0,
+      "warnings": {
+        "total": 0,
+        "by_code": {}
+      },
+      "duration_seconds": 6.149069042177871
+    },
+    "warnings": [],
+    "markdown_excerpt": "CLAUDE CODE\n\nEngineering Design: Sample tech stack\n\nFrontend\n\nVercel NEXT.JS\n\ntailwindcss\n\nShadcn/ui\n\nDatabase\n\nMongoDB supabase\n\nAuth / Login\n\n@clerk\n\nEmails\n\nResend\n\nCloud / VMs\n\nDigitalOcean\n\nObject storage\n\nR2\n\nCLOUDFLARE\n\nAI models ANTHROP\\C Gemini\n\nAI with Avthar | @avthars | ainativebuilder.com"
+  },
+  {
+    "file": "theme-cards.png",
+    "expected_validation": "accepted",
+    "failures": [],
+    "actual_validation": "accepted",
+    "stats": {
+      "pages": {
+        "total": 1,
+        "read": 0,
+        "ocr": 1,
+        "mixed": 0
+      },
+      "images": {
+        "total": 1,
+        "decorative": 0,
+        "with_ocr_text": 1
+      },
+      "tables": {
+        "total": 0,
+        "with_merged_cells": 0
+      },
+      "headings": 0,
+      "paragraphs": 33,
+      "lists": 0,
+      "warnings": {
+        "total": 1,
+        "by_code": {
+          "table_inconsistent": 1
+        }
+      },
+      "duration_seconds": 3.4516278749797493
+    },
+    "warnings": [
+      {
+        "page_number": 1,
+        "code": "table_inconsistent",
+        "message": "Aligned text is ambiguous; no unruled table was fabricated."
+      }
+    ],
+    "markdown_excerpt": "Void Aurora Sakura Obsidian Slate Ember Chalk Neon Sag\n\nMidnight\n\nPrompt Studio\n\nTry free\n\nVoid Dark\u00b7Minimal\u00b7Monochrome\n\nPrompt Studio\n\nTry free\n\nAurora Dark\u00b7Teal\u00b7Electric\n\nPrompt Studio\n\nTry free\n\nSakura Light\u00b7Pink\u00b7Soft\n\nPrompt Studio\n\nTry free\n\nObsidian Dark\u00b7Gold\u00b7Premium\n\nPrompt Studio\n\nTry free\n\nSlate Light\u00b7Blue-grey\u00b7Professional\n\nPrompt Studio\n\nTry free\n\nEmber Dark\u00b7Red-orange\u00b7Bold\n\nPrompt Studio\n\nTry free\n\nChalk Light\u00b7Warm cream\u00b7Editorial\n\nPrompt Studio\n\nTry free\n\nNeon Dark\u00b7Cyberpunk\u00b7High contrast\n\nPrompt Studio\n\nTry free\n\nSage\n\nLight\u00b7Muted green\u00b7Calm\n\nPrompt Studio\n\nTry free\n\nMidnight Dark\u00b7Deep blue\u00b7Trustworthy"
+  },
+  {
+    "file": "theme-palette.png",
+    "expected_validation": "accepted",
+    "failures": [],
+    "actual_validation": "accepted",
+    "stats": {
+      "pages": {
+        "total": 1,
+        "read": 0,
+        "ocr": 1,
+        "mixed": 0
+      },
+      "images": {
+        "total": 1,
+        "decorative": 0,
+        "with_ocr_text": 1
+      },
+      "tables": {
+        "total": 2,
+        "with_merged_cells": 2
+      },
+      "headings": 0,
+      "paragraphs": 2,
+      "lists": 0,
+      "warnings": {
+        "total": 1,
+        "by_code": {
+          "reading_order_uncertain": 1
+        }
+      },
+      "duration_seconds": 1.8982982500456274
+    },
+    "warnings": [
+      {
+        "page_number": 1,
+        "code": "reading_order_uncertain",
+        "message": "Overlapping blocks have no clean gap; order is provisional."
+      }
+    ],
+    "markdown_excerpt": "| LIGHT |  |\n| --- | --- |\n| BG: | #F5F7F2 |\n| Surface: | #FFFFFF |\n| Border: | #D4DDD5 |\n| Text: | #1A2E1C |\n| Accent: | #16A34A |\n| Grad: | #15803D\u2192#22C55E |\n\n| DARK |  |\n| --- | --- |\n| BG: | #0C120D |\n| Surface: | #151E16 |\n| Border: | #253026 |\n| Text: | #E2EDE3 |\n| Accent: | #4ADE80 |\n| Grad: | #4ADE80\u2192#86EFAC |\n\nVibe: Calm, trustworthy, organic\n\nLike: Loom, Notion, Cal.com"
+  }
+]

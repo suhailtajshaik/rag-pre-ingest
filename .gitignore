@@ -40,4 +40,5 @@ node_modules/
 .vscode/
 .code-review-graph/
 BUILD_PROMPT.md
+AGENTS.md
 *.log

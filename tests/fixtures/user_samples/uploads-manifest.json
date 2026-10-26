@@ -1,0 +1,56 @@
+[
+  {
+    "original_name": "ml_cyber_roles_table_new.pdf",
+    "sha256": "6cfbe67dcf5a1046398495c7e3d1de12415f67c0f1a42cf63033b250fdb42d89",
+    "asset": "ml-cyber-roles.pdf",
+    "bytes": 5582
+  },
+  {
+    "original_name": "Screenshot 2026-03-07 at 12.56.47\u202fPM.png",
+    "sha256": "00ab40c79b628577846bb817c2b878e5d4a677f8a175136b7fd8fd12ffa15602",
+    "asset": "image-models.png",
+    "bytes": 1126403
+  },
+  {
+    "original_name": "Screenshot 2026-01-09 at 12.54.25\u202fAM.png",
+    "sha256": "8ed35f01bad856ce5521bb8133e8ffccf933c4e79b7236881cc3eab89c79bd5d",
+    "asset": "tech-stack.png",
+    "bytes": 1171143
+  },
+  {
+    "original_name": "Screenshot 2026-03-08 at 3.43.03\u202fPM.png",
+    "sha256": "c2673670ac65ba413c3290c0da96739c426504f86dcf1fdd256d2472c72d4485",
+    "asset": "automation-workshop.png",
+    "bytes": 833576
+  },
+  {
+    "original_name": "Screenshot 2026-03-08 at 3.17.07\u202fPM.png",
+    "sha256": "ad00db61e6fba2acb332114ee794f21dcbddb30ab613eb741851be999aba9551",
+    "asset": "learning-levels.png",
+    "bytes": 944584
+  },
+  {
+    "original_name": "Screenshot 2026-04-30 at 12.01.25\u202fPM.png",
+    "sha256": "31eb2af6446cc1ac6ddd4c3003ee480cf02744932478fd7b10e0aaf571b99af5",
+    "asset": "python-code.png",
+    "bytes": 412072
+  },
+  {
+    "original_name": "Screenshot 2026-03-29 at 3.13.36\u202fAM.png",
+    "sha256": "8c47c0ba913fc2f685494c167af01fccb94148693f953a602a5728d67db30f97",
+    "asset": "theme-cards.png",
+    "bytes": 293446
+  },
+  {
+    "original_name": "Screenshot 2026-03-07 at 10.11.42\u202fAM.png",
+    "sha256": "fcf4f423c4c89cce40f02ca3b06c1ba7f851b984b4f771ea32845381ac666948",
+    "asset": "llm-flowchart.png",
+    "bytes": 2276502
+  },
+  {
+    "original_name": "Screenshot 2026-06-25 at 9.16.36\u202fPM.png",
+    "sha256": "5ab1696a3a84e0d5a6e296796623fabe8f43dc468fcc32f737cc71f5902cc09b",
+    "asset": "numbered-questions.png",
+    "bytes": 2054676
+  }
+]

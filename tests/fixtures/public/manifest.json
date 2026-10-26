@@ -1,0 +1,134 @@
+{
+  "retrieved": "2026-10-25",
+  "w3c_commit": "457cece22d8219be32d29c5c1313e71aa6b61eae",
+  "documents": [
+    {
+      "file": "w3c-complex-table.pdf",
+      "source": "https://raw.githubusercontent.com/w3c/wcag/457cece22d8219be32d29c5c1313e71aa6b61eae/working-examples/pdf-complex-table/complex-table.pdf",
+      "source_page": "https://www.w3.org/WAI/WCAG22/Techniques/pdf/",
+      "scenarios": [
+        "complex_table",
+        "multirow_headers",
+        "merged_cells"
+      ],
+      "attribution": "W3C WCAG working examples; contributors; original bytes unchanged",
+      "license": "W3C Document License",
+      "license_url": "https://www.w3.org/copyright/document-license-2023/",
+      "bytes": 132046,
+      "sha256": "c0bd0fc65103f2528e2fd6ece4c2529cce9dbbbdc0d333dc0d7e538550cd46c7"
+    },
+    {
+      "file": "w3c-complex-table.docx",
+      "source": "https://raw.githubusercontent.com/w3c/wcag/457cece22d8219be32d29c5c1313e71aa6b61eae/working-examples/pdf-complex-table/complex-table.docx",
+      "source_page": "https://www.w3.org/WAI/WCAG22/Techniques/pdf/",
+      "scenarios": [
+        "word_complex_table",
+        "merged_cells"
+      ],
+      "attribution": "W3C WCAG working examples; contributors; original bytes unchanged",
+      "license": "W3C Document License",
+      "license_url": "https://www.w3.org/copyright/document-license-2023/",
+      "bytes": 13300,
+      "sha256": "12f4c3912d66c6b05409bce28f881fc9fe25aebb7b7605189e95dc2b1b76bf1c"
+    },
+    {
+      "file": "w3c-two-columns.pdf",
+      "source": "https://raw.githubusercontent.com/w3c/wcag/457cece22d8219be32d29c5c1313e71aa6b61eae/working-examples/pdf-reading-order/reading-order-2cols-word.pdf",
+      "source_page": "https://www.w3.org/WAI/WCAG22/Techniques/pdf/",
+      "scenarios": [
+        "two_columns",
+        "tagged_pdf"
+      ],
+      "attribution": "W3C WCAG working examples; contributors; original bytes unchanged",
+      "license": "W3C Document License",
+      "license_url": "https://www.w3.org/copyright/document-license-2023/",
+      "bytes": 68781,
+      "sha256": "9a3a38c444fa165d2b33af41fb2c90502c52def5c560f5d543afe01d937d6e80"
+    },
+    {
+      "file": "w3c-headings.pdf",
+      "source": "https://raw.githubusercontent.com/w3c/wcag/457cece22d8219be32d29c5c1313e71aa6b61eae/working-examples/pdf-headings/cooking.pdf",
+      "source_page": "https://www.w3.org/WAI/WCAG22/Techniques/pdf/",
+      "scenarios": [
+        "headings",
+        "nested_headings"
+      ],
+      "attribution": "W3C WCAG working examples; contributors; original bytes unchanged",
+      "license": "W3C Document License",
+      "license_url": "https://www.w3.org/copyright/document-license-2023/",
+      "bytes": 53633,
+      "sha256": "a64862a651e82f3c2fdff3060739c683a270ed404ec7c235f5d3d94a1c05f530"
+    },
+    {
+      "file": "w3c-headings.docx",
+      "source": "https://raw.githubusercontent.com/w3c/wcag/457cece22d8219be32d29c5c1313e71aa6b61eae/working-examples/pdf-headings/cooking.docx",
+      "source_page": "https://www.w3.org/WAI/WCAG22/Techniques/pdf/",
+      "scenarios": [
+        "word_heading_styles"
+      ],
+      "attribution": "W3C WCAG working examples; contributors; original bytes unchanged",
+      "license": "W3C Document License",
+      "license_url": "https://www.w3.org/copyright/document-license-2023/",
+      "bytes": 10552,
+      "sha256": "db30a3522ac7368522d6183a26c4d1a612638bbe5e8ff7fdea41b5d60f7798fd"
+    },
+    {
+      "file": "w3c-lists.pdf",
+      "source": "https://raw.githubusercontent.com/w3c/wcag/457cece22d8219be32d29c5c1313e71aa6b61eae/working-examples/pdf-lists/lists.pdf",
+      "source_page": "https://www.w3.org/WAI/WCAG22/Techniques/pdf/",
+      "scenarios": [
+        "bullet_lists",
+        "numbered_lists"
+      ],
+      "attribution": "W3C WCAG working examples; contributors; original bytes unchanged",
+      "license": "W3C Document License",
+      "license_url": "https://www.w3.org/copyright/document-license-2023/",
+      "bytes": 74705,
+      "sha256": "4fc127b16ce756cea30e9db30897a4387349ba7499281c7bf64c9671e3d3f9ae"
+    },
+    {
+      "file": "w3c-language.pdf",
+      "source": "https://raw.githubusercontent.com/w3c/wcag/457cece22d8219be32d29c5c1313e71aa6b61eae/working-examples/pdf-lang-phrase/lang-of-phrase.pdf",
+      "source_page": "https://www.w3.org/WAI/WCAG22/Techniques/pdf/",
+      "scenarios": [
+        "multilingual_text",
+        "pdf_language_metadata"
+      ],
+      "attribution": "W3C WCAG working examples; contributors; original bytes unchanged",
+      "license": "W3C Document License",
+      "license_url": "https://www.w3.org/copyright/document-license-2023/",
+      "bytes": 43474,
+      "sha256": "dad1cbf0a8ded8e4a267838dbe918361cb3bba8394d641f0a5760d47dbab9dfd"
+    },
+    {
+      "file": "irs-w9.pdf",
+      "source": "https://www.irs.gov/pub/irs-pdf/fw9.pdf",
+      "source_page": "https://www.irs.gov/forms-pubs/about-form-w-9",
+      "scenarios": [
+        "fillable_form",
+        "multicolumn_instructions"
+      ],
+      "attribution": "Internal Revenue Service; blank form; no submitted taxpayer data",
+      "license": "US federal employee work; IRS reuse policy; no endorsement",
+      "license_url": "https://www.irs.gov/about-irs/use-of-content-from-irsgov",
+      "bytes": 140815,
+      "sha256": "2d420cbb4123dcf1fb82595b2359cfbb5d81f00b9df9d359fcc7af361d093f53"
+    },
+    {
+      "file": "census-state-population.xlsx",
+      "source": "https://www2.census.gov/programs-surveys/popest/tables/2020-2024/state/totals/NST-EST2024-POP.xlsx",
+      "source_page": "https://www2.census.gov/programs-surveys/popest/tables/2020-2024/state/totals/",
+      "scenarios": [
+        "official_numeric_spreadsheet",
+        "multirow_merged_headers",
+        "formatted_numbers",
+        "source_notes"
+      ],
+      "attribution": "U.S. Census Bureau, Population Division, Vintage 2024 estimates",
+      "license": "US federal government statistical data; no endorsement",
+      "license_url": "https://www.copyright.gov/history/copyright-exhibit/lifecycle/",
+      "bytes": 15507,
+      "sha256": "4a98cd464d3f9e122e74b47b38f1584e78e9077f4b36be1cabf7a79ab5942852"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "normalization": "NFC Unicode and whitespace collapse; case, punctuation and numbers preserved",
+  "cases": [
+    {
+      "fixture": "user_samples/numbered-questions.png",
+      "transcription": "numbered-questions.txt",
+      "split": "regression",
+      "scope": "full visible text",
+      "provenance": "Manually transcribed from owner-provided screenshot, already used during development",
+      "max_cer": 0.0,
+      "max_wer": 0.0
+    },
+    {
+      "fixture": "user_samples/automation-workshop.png",
+      "transcription": "automation-workshop.txt",
+      "split": "regression",
+      "scope": "full visible text, left panel then right labels",
+      "provenance": "Manually transcribed from owner-provided workshop screenshot; already used during development",
+      "max_cer": 0.0,
+      "max_wer": 0.0
+    }
+  ],
+  "held_out_real_documents": [],
+  "held_out_policy": "Existing fixtures are development regressions, not unseen data. Reserve new externally supplied documents before tuning; report synthetic invariants separately. No held-out accuracy claim is supported yet."
+}
